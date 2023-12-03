@@ -1,0 +1,29 @@
+main {
+    background-color: #d3d3d3;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* #image-banner {
+    position: fixed;
+} */
+
+#text-area {
+    
+}
+
+#form-area {
+    background-color: #FAECE2; 
+}
+
+img {
+    width: 33%;
+    height: 100vh;
+    float: left;
+}
