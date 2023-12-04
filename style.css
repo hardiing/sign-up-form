@@ -6,24 +6,98 @@ body {
     margin: 0;
 }
 
-h1 {
-    margin: 0;
-}
-
-/* #image-banner {
-    position: fixed;
-} */
-
-#text-area {
-    
-}
-
-#form-area {
-    background-color: #FAECE2; 
-}
-
 img {
-    width: 33%;
+
+}
+
+p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.image-container {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.middle {
+    background: black;
+    opacity: 0.9;
+    /* float: left; */
+    z-index: 2;
+    position: absolute;
+    color: white;
+    top: 250px;
+    left: 100px;
+    height: 200px;
+    text-align: center;
+}
+
+.middle p {
+    left: 125px;
+    top: 50px;
+    font-size: 3rem;
+}
+
+.top {
+    position: absolute;
+    z-index: 3;
+    height: 150px;
+    align-self: center;
+}
+
+.bottom {
+    width: 40%;
     height: 100vh;
     float: left;
+    z-index: 1;
+    position: relative;
+}
+
+.text-area {
+    text-align: center;
+    padding: 150px 100px 50px 550px;
+}
+
+.form-area {
+    background-color: #FAECE2;
+    margin-bottom: 50px;
+    padding: 50px 100px 50px 550px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 1px 1px 5px;
+}
+
+form {
+}
+
+label {
+    font-size: 12px;
+}
+
+input {
+    border-color: #E5E7EB;
+    width: 200px;
+    text-align: center;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: .25px;
+}
+
+button {
+    width: 200px;
+    background-color: #596D48;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.login-area {
+    text-align: center;
 }

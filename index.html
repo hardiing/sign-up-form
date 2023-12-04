@@ -7,17 +7,48 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
-    <div id="image-banner">
-        <img src="./images/plant.jpg" alt="plant">
+    <div class="image-container">
+        <img src="./images/plant.jpg" alt="plant" class="bottom">
+        <div class="middle">
+            <img src="./images/odin-lined.png" alt="logo" class="top">
+            <p class="top">ODIN</p>
+        </div>
     </div>
-    <div id="text-area">
-        <h1>Text field</h1>
+    <div class="text-area">
+        <p>This is not a real online service! You know you need something like this
+            in your life to help you realize your deepest dreams. Sign up <i>now</i>
+            to get started.
+            <br><br>
+            You <i>know</i> you want to.
+        </p>
     </div>
-    <div id="form-area">
-        <form>
-            <label>First Name</label>
-            <input type="text">
+    <div class="form-area">
+
+        <p>&emsp;Let's do this!</p><br><br>
+
+        <form name="sign-up" method="post">
+            <!-- <label for="first-name">FIRST NAME</label> -->
+            <input type="text" placeholder="FIRST NAME">
+            <!-- <label for="last-name">LAST NAME</label> -->
+            <input type="text" placeholder="LAST NAME">
+            <br><br>
+            <!-- <label for="email">EMAIL</label> -->
+            <input type="email" placeholder="EMAIL">
+            <!-- <label for="phone">PHONE NUMBER</label> -->
+            <input type="tel" placeholder="PHONE NUMBER">
+            <br><br>
+            <!-- <label for="password">PASSWORD</label> -->
+            <input type="password" placeholder="PASSWORD">
+            <!-- <label for="confirm-pw">CONFIRM PASSWORD</label> -->
+            <input type="password" placeholder="CONFIRM PASSWORD">
+            <br><br>
+            &emsp;<button type="submit">Create Account</button>
         </form>
+
     </div>
+
+    <div class="login-area">   
+        <p>&emsp;Already have an account? <a href="www.google.com">Log in</a></p>
+    </div> 
 </body>
 </html>
