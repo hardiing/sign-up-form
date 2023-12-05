@@ -1,13 +1,15 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url('Norse-Bold.otf');
+}
+
 main {
     background-color: #d3d3d3;
 }
 
 body {
     margin: 0;
-}
-
-img {
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -19,25 +21,27 @@ p {
     justify-content: center;
     text-align: center;
     position: relative;
+    height: auto;
+    width: auto;
 }
 
 .middle {
-    background: black;
-    opacity: 0.9;
-    /* float: left; */
+    background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+    background: rgba(0, 0, 0, 0.5);
+    float: left;
     z-index: 2;
     position: absolute;
     color: white;
     top: 250px;
-    left: 100px;
     height: 200px;
+    width: 40%;
     text-align: center;
 }
 
 .middle p {
     left: 125px;
     top: 50px;
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 .top {
@@ -45,6 +49,7 @@ p {
     z-index: 3;
     height: 150px;
     align-self: center;
+    font-family: Norse-Bold, Arial, Helvetica, sans-serif;
 }
 
 .bottom {
@@ -69,9 +74,6 @@ p {
     box-shadow: 1px 1px 5px;
 }
 
-form {
-}
-
 label {
     font-size: 12px;
 }
@@ -85,6 +87,16 @@ input {
 input:focus {
     border-color: blue;
     box-shadow: .25px;
+}
+
+input:invalid {
+    border-color: red;
+    box-shadow: .25px;
+}
+
+.must-match {
+    color: red;
+    font-size: 12px;
 }
 
 button {
