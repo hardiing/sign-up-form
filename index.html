@@ -7,38 +7,47 @@
     <title>Sign-Up Form</title>
 </head>
 <body>
+    <div id="image-container">
+        <img src="/images/plant.jpg" alt="Plants" srcset="" id="plant">
+    </div>
     <div id="content-container">
-        <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h1>
-        <h1>You <i>know</i> you want to.</h1>
-        <form action="" method="post">
-            <h1>Let's do this!</h1>
-            <p>
-                <label for="fname">First Name</label>
-                <input type="text" name="fname" />
-            </p>
-            <p>
-                <label for="lname">Last Name</label>
-                <input type="text" name="lname" />
-            </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="email" name="email" />
-            </p>
-            <p>
-                <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" />
-            </p>
-            <p>
-                <label for="userpw">Password</label>
-                <input type="password" name="userpw" />
-            </p>
-            <p>
-                <label for="confirmpw">Confirm Password</label>
-                <input type="password" name="confirmpw" />
-            </p>
-        </form>
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="http://">Log in</a></p>
+        <div id="above-form">
+            <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h1>
+            <h1>You <i>know</i> you want to.</h1>
+        </div>
+        <div id="form-container">
+            <form action="" method="post">
+                <h1>Let's do this!</h1>
+                <p id="inputs">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" />
+                </p>
+                <p id="inputs">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" />
+                </p>
+                <p id="inputs">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" />
+                </p>
+                <p id="inputs">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" />
+                </p>
+                <p id="inputs">
+                    <label for="userpw">Password</label>
+                    <input type="password" name="userpw" />
+                </p>
+                <p id="inputs">
+                    <label for="confirmpw">Confirm Password</label>
+                    <input type="password" name="confirmpw" />
+                </p>
+            </form>
+        </div>
+        <div id="under-form">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="http://">Log in</a></p>
+        </div>
     </div>
 </body>
 </html>
