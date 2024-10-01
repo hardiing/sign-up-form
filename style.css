@@ -5,6 +5,10 @@
 
 #image-container {
     position: left;
+    object-fit: contain;
+    height: 100vh;
+    width: 50%;
+    background-image: url(/images/plant.jpg)
 }
 
 #content-container {
@@ -16,14 +20,33 @@
     align-items: left;
 }
 
-#plant {
-    width: 50em;
+#odin-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding-top: 25vh;
+}
+
+#odin {
+    z-index: 1;
+    height: 250px;
+    width: 250px;
+    position: left;
+}
+
+#odin-container h2 {
+    position: right;
+    font-size: 10em;
+    color: white;
 }
 
 body {
     display: flex;
     flex-direction: row;
     margin: 0;
+    height: 100vh;
 }
 
 input {
