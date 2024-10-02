@@ -23,27 +23,28 @@
                 <h1>Let's do this!</h1>
                 <p id="inputs">
                     <label for="fname">First Name</label>
-                    <input type="text" name="fname" />
+                    <input type="text" name="fname" required />
                 </p>
                 <p id="inputs">
                     <label for="lname">Last Name</label>
-                    <input type="text" name="lname" />
+                    <input type="text" name="lname" required />
                 </p>
                 <p id="inputs">
                     <label for="email">Email</label>
-                    <input type="email" name="email" />
+                    <input type="email" name="email" required />
                 </p>
                 <p id="inputs">
                     <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" />
+                    <input type="tel" name="phone" required />
                 </p>
                 <p id="inputs">
                     <label for="userpw">Password</label>
-                    <input type="password" name="userpw" />
+                    <input type="password" name="userpw" minlength="8" required />
                 </p>
                 <p id="inputs">
                     <label for="confirmpw">Confirm Password</label>
-                    <input type="password" name="confirmpw" />
+                    <input type="password" name="confirmpw" minlength="8" required />
+                    <p class="validation">*Passwords must match</p>
                 </p>
             </form>
         </div>

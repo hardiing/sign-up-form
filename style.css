@@ -1,3 +1,8 @@
+@font-face {
+    font-family: odinFont;
+    src: url(Norse-Bold.otf);
+  }
+
 #inputs {
     display: flex;
     flex-direction: column;
@@ -40,6 +45,7 @@
     position: right;
     font-size: 10em;
     color: white;
+    font-family: odinFont, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -53,6 +59,16 @@ input {
     width: 250px;
     border-radius: 5px;
     height: 2em;
+    border-color: #E5E7EB;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
 #above-form {
@@ -103,4 +119,8 @@ button {
 
 button:hover {
     color: black;
+}
+
+.validation {
+    color: red;
 }
